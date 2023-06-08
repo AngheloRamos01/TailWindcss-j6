@@ -544,6 +544,10 @@ html {
   bottom: 2.5rem;
 }
 
+.bottom-9 {
+  bottom: 2.25rem;
+}
+
 .left-1\/2 {
   left: 50%;
 }
@@ -592,6 +596,11 @@ html {
   margin-bottom: 1rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -604,20 +613,8 @@ html {
   margin-left: 2.5rem;
 }
 
-.ml-16 {
-  margin-left: 4rem;
-}
-
 .ml-2 {
   margin-left: 0.5rem;
-}
-
-.ml-32 {
-  margin-left: 8rem;
-}
-
-.ml-48 {
-  margin-left: 12rem;
 }
 
 .ml-5 {
@@ -648,8 +645,8 @@ html {
   margin-top: 1.25rem;
 }
 
-.mt-52 {
-  margin-top: 13rem;
+.ml-9 {
+  margin-left: 2.25rem;
 }
 
 .block {
@@ -903,8 +900,16 @@ html {
   padding-top: 50px;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .text-left {
   text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-2xl {
@@ -938,6 +943,10 @@ html {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
 }
 
 .font-bold {
@@ -1037,6 +1046,18 @@ you can customize your code here only if you cannot do it through tailwind class
     top: 1.75rem;
   }
 
+  .sm\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .sm\:h-10 {
+    height: 2.5rem;
+  }
+
+  .sm\:w-10 {
+    width: 2.5rem;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1057,9 +1078,108 @@ you can customize your code here only if you cannot do it through tailwind class
 }
 
 @media (min-width: 768px) {
+  .md\:bottom-7 {
+    bottom: 1.75rem;
+  }
+
+  .md\:bottom-5 {
+    bottom: 1.25rem;
+  }
+
+  .md\:bottom-3 {
+    bottom: 0.75rem;
+  }
+
+  .md\:bottom-2 {
+    bottom: 0.5rem;
+  }
+
+  .md\:left-5 {
+    left: 1.25rem;
+  }
+
+  .md\:left-10 {
+    left: 2.5rem;
+  }
+
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .md\:my-1 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .md\:mx-1 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .md\:mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .md\:mx-3 {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+
+  .md\:my-3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .md\:my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .md\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .md\:mr-3 {
+    margin-right: 0.75rem;
+  }
+
+  .md\:mr-2 {
+    margin-right: 0.5rem;
+  }
+
+  .md\:mr-1 {
+    margin-right: 0.25rem;
+  }
+
+  .md\:ml-8 {
+    margin-left: 2rem;
+  }
+
+  .md\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
+  .md\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .md\:ml-12 {
+    margin-left: 3rem;
+  }
+
+  .md\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .md\:ml-24 {
+    margin-left: 6rem;
+  }
+
+  .md\:ml-\[100px\] {
+    margin-left: 100px;
   }
 
   .md\:block {
@@ -1078,12 +1198,32 @@ you can customize your code here only if you cannot do it through tailwind class
     display: none;
   }
 
+  .md\:h-10 {
+    height: 2.5rem;
+  }
+
   .md\:h-14 {
     height: 3.5rem;
   }
 
+  .md\:h-5 {
+    height: 1.25rem;
+  }
+
+  .md\:w-10 {
+    width: 2.5rem;
+  }
+
   .md\:w-14 {
     width: 3.5rem;
+  }
+
+  .md\:w-6 {
+    width: 1.5rem;
+  }
+
+  .md\:w-5 {
+    width: 1.25rem;
   }
 
   .md\:grid-cols-3 {
@@ -1115,19 +1255,123 @@ you can customize your code here only if you cannot do it through tailwind class
     padding-bottom: 0px;
   }
 
+  .md\:pr-2 {
+    padding-right: 0.5rem;
+  }
+
+  .md\:pr-1 {
+    padding-right: 0.25rem;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .md\:text-\[10px\] {
+    font-size: 10px;
+  }
+
+  .md\:text-\[15px\] {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 1024px) {
-  .lg\:h-11 {
-    height: 2.75rem;
+  .lg\:my-3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
   }
 
-  .lg\:w-11 {
-    width: 2.75rem;
+  .lg\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .lg\:-mx-4 {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  .lg\:-mx-2 {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+
+  .lg\:-mx-3 {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+
+  .lg\:-my-3 {
+    margin-top: -0.75rem;
+    margin-bottom: -0.75rem;
+  }
+
+  .lg\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .lg\:my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .lg\:my-\[22px\] {
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+  .lg\:my-\[21px\] {
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+
+  .lg\:my-\[20px\] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .lg\:my-\[19px\] {
+    margin-top: 19px;
+    margin-bottom: 19px;
+  }
+
+  .lg\:-mr-3 {
+    margin-right: -0.75rem;
+  }
+
+  .lg\:-ml-3 {
+    margin-left: -0.75rem;
+  }
+
+  .lg\:-ml-2 {
+    margin-left: -0.5rem;
+  }
+
+  .lg\:-ml-1 {
+    margin-left: -0.25rem;
+  }
+
+  .lg\:-ml-0 {
+    margin-left: -0px;
+  }
+
+  .lg\:ml-52 {
+    margin-left: 13rem;
+  }
+
+  .lg\:h-14 {
+    height: 3.5rem;
+  }
+
+  .lg\:w-14 {
+    width: 3.5rem;
+  }
+
+  .lg\:w-10 {
+    width: 2.5rem;
   }
 }
 

@@ -540,6 +540,14 @@ html {
   position: relative;
 }
 
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
 .left-10 {
   left: 2.5rem;
 }
@@ -722,6 +730,11 @@ html {
 
 .max-w-5xl {
   max-width: 64rem;
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-cols-1 {
@@ -908,6 +921,10 @@ html {
   font-size: 30px;
 }
 
+.text-\[4px\] {
+  font-size: 4px;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1061,6 +1078,14 @@ you can customize your code here only if you cannot do it through tailwind class
     display: none;
   }
 
+  .md\:h-14 {
+    height: 3.5rem;
+  }
+
+  .md\:w-14 {
+    width: 3.5rem;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1093,6 +1118,16 @@ you can customize your code here only if you cannot do it through tailwind class
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:h-11 {
+    height: 2.75rem;
+  }
+
+  .lg\:w-11 {
+    width: 2.75rem;
   }
 }
 
